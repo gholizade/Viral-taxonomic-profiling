@@ -46,12 +46,12 @@ nextflow run main.nf -profile slurm
 - Designed to run on SLURM HPC environments with the provided `nextflow.config`.
 - Place your real or synthetic FASTQ file in the `data/` folder.
 - 
-## shell commands you can copy-paste to run this pipeline step-by-step on your HPC
+## Shell commands you can copy-paste to run this pipeline step-by-step on your HPC
 The following instructions provide step-by-step shell commands you can copy and paste directly into your terminal to run the entire workflow on an HPC cluster (with SLURM).
 It includes setting up the environment, downloading input data and the viral Kraken2 database, and running the pipeline using Nextflow.
 This ensures your run is fully reproducible and aligned with the workflow described in our publication.
 
-# 1. Set Up the Project
+### 1. Set Up the Project
 bash
 Copy
 Edit
@@ -59,14 +59,14 @@ git clone https://github.com/your-username/viral-taxonomy-pipeline.git
 cd viral-taxonomy-pipeline
 Or unzip the provided archive.
 
-# 2. Download Sample Data
+### 2. Download Sample Data
 bash
 Copy
 Edit
 mkdir -p data
 wget -O data/ERR2696810.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR269/ERR2696810/ERR2696810.fastq.gz
 
-# 3. Download Kraken2 Viral Database
+### 3. Download Kraken2 Viral Database
 bash
 Copy
 Edit
@@ -77,32 +77,27 @@ tar -xvzf k2_viral_20231009.tar.gz
 cd ..
 Note: This database is already prebuilt and doesn’t require kraken2-build.
 
-# 4. Create the Conda Environment
+### 4. Create the Conda Environment
 bash
 Copy
 Edit
 conda env create -f envs/conda.yml
 conda activate viral_taxonomy_env
 
-# 5. Run the Pipeline
+### 5. Run the Pipeline
 bash
 Copy
 Edit
 nextflow run main.nf -profile slurm
 This will:
+- Run FastQC to assess read quality
+- Classify viral reads with Kraken2 (custom parameters)
+- Estimate abundances at all levels (P → S) using Bracken
 
-Run FastQC to assess read quality
-
-Classify viral reads with Kraken2 (custom parameters)
-
-Estimate abundances at all levels (P → S) using Bracken
-
-# 6. Collect Results
+### 6. Collect Results
 You’ll find:
 
-kraken2.report, kraken2.output — classification details
-
-bracken_P.txt to bracken_S.txt — abundance per taxonomic level
-
-fastqc HTML and ZIP reports
+- kraken2.report, kraken2.output — classification details
+- bracken_P.txt to bracken_S.txt — abundance per taxonomic level
+- fastqc HTML and ZIP reports
 
