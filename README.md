@@ -14,10 +14,10 @@ It focuses on identifying and estimating the abundance of viral species using th
 
 ## Prerequisites
 Make sure the following are installed or available:
-Nextflow >= 22.10
-conda (Miniconda or Anaconda)
-Access to a HPC or Unix system (e.g. SLURM) 
-Prebuilt Kraken2 database: k2_viral_20231009 (Download link)
+- Nextflow >= 22.10
+- conda (Miniconda or Anaconda)
+- Access to a HPC or Unix system (e.g. SLURM) 
+- Prebuilt Kraken2 database: k2_viral_20231009 (Download link)
 
 ## Usage
 
