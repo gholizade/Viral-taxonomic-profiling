@@ -56,7 +56,7 @@ This ensures your run is fully reproducible and aligned with the workflow descri
 git clone https://github.com/your-username/viral-taxonomy-pipeline.git
 cd viral-taxonomy-pipeline
 ```
-Or unzip the provided archive.
+Or unzip the provided archive: `Viral_pipeline_package.zip`.
 
 ### 2. Download Sample Data
 ```bash
