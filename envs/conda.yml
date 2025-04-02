@@ -1,0 +1,11 @@
+name: viral_taxonomy_env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - fastqc=0.11.9
+  - multiqc=1.13
+  - kraken2=2.1.2
+  - bracken=2.7
+  - python=3.10

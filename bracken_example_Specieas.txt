@@ -1,0 +1,4 @@
+Simulated bracken S level output...
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads
+Lagaffevirus lagaffe	2734112	S	25584	200	27584	0.104
+
