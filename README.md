@@ -53,8 +53,6 @@ This ensures your run is fully reproducible and aligned with the workflow descri
 
 ### 1. Set Up the Project
 ```bash
-Copy
-Edit
 git clone https://github.com/your-username/viral-taxonomy-pipeline.git
 cd viral-taxonomy-pipeline
 ```
@@ -62,15 +60,11 @@ Or unzip the provided archive.
 
 ### 2. Download Sample Data
 ```bash
-Copy
-Edit
 mkdir -p data
 wget -O data/ERR2696810.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR269/ERR2696810/ERR2696810.fastq.gz
 ```
 ### 3. Download Kraken2 Viral Database
 ```bash
-Copy
-Edit
 mkdir -p kraken2_db
 cd kraken2_db
 wget https://genome-idx.s3.amazonaws.com/kraken/k2_viral_20231009.tar.gz
@@ -81,15 +75,11 @@ Note: This database is already prebuilt and doesn’t require kraken2-build.
 
 ### 4. Create the Conda Environment
 ```bash
-Copy
-Edit
 conda env create -f envs/conda.yml
 conda activate viral_taxonomy_env
 ```
 ### 5. Run the Pipeline
 ```bash
-Copy
-Edit
 nextflow run main.nf -profile slurm
 ```
 This will:
