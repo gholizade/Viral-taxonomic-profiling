@@ -69,8 +69,8 @@ mkdir -p kraken2_db
 cd kraken2_db
 wget https://genome-idx.s3.amazonaws.com/kraken/k2_viral_20231009.tar.gz
 tar -xvzf k2_viral_20231009.tar.gz
-
-```cd ..
+cd ..
+```
 Note: This database is already prebuilt and doesn’t require kraken2-build.
 
 ### 4. Create the Conda Environment
