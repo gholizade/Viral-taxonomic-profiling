@@ -1,4 +1,4 @@
-# Viral Taxonomic Classification Pipeline (Nextflow)
+# Viral Taxonomic Classification Pipeline
 
 Viral Taxonomic Profiling Workflow
 This is a fully reproducible Nextflow pipeline for taxonomic profiling of shotgun metagenomic data.
