@@ -45,7 +45,7 @@ nextflow run main.nf -profile slurm
 - This pipeline assumes the input reads are untrimmed based on FastQC quality metrics.
 - Designed to run on SLURM HPC environments with the provided `nextflow.config`.
 - Place your real or synthetic FASTQ file in the `data/` folder.
-- 
+  
 ## Shell commands you can copy-paste to run this pipeline step-by-step on your HPC
 The following instructions provide step-by-step shell commands you can copy and paste directly into your terminal to run the entire workflow on an HPC cluster (with SLURM).
 It includes setting up the environment, downloading input data and the viral Kraken2 database, and running the pipeline using Nextflow.
