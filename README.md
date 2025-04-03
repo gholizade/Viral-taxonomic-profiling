@@ -17,7 +17,7 @@ Make sure the following are installed or available:
 - Nextflow >= 22.10
 - conda (Miniconda or Anaconda)
 - Access to a HPC or Unix system (e.g. SLURM) 
-- Prebuilt Kraken2 database: k2_viral_20231009 ([Download link](https://genome-idx.s3.amazonaws.com/kraken/k2_viral_20231009.tar.gz))
+- Kraken2 database: k2_viral_20231009 ([Download link](https://genome-idx.s3.amazonaws.com/kraken/k2_viral_20231009.tar.gz))
 
 ## Usage
 
@@ -71,7 +71,7 @@ wget https://genome-idx.s3.amazonaws.com/kraken/k2_viral_20231009.tar.gz
 tar -xvzf k2_viral_20231009.tar.gz
 cd ..
 ```
-Note: This database is already prebuilt and doesn’t require kraken2-build.
+Note: This database is needs to built and doese require kraken2-build.
 
 ### 4. Create the Conda Environment
 ```bash
