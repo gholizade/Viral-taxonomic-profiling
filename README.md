@@ -84,7 +84,7 @@ nextflow run main.nf -profile slurm
 ```
 This will:
 - Run FastQC to assess read quality
-- Classify viral reads with Kraken2 (custom parameters)
+- Classify viral reads with Kraken2 (custom parameters: `confidence = 0.1`, `kmer_len = 35`, `minimizer_len = 31`)
 - Estimate abundances at all levels (P → S) using Bracken
 
 ### 6. Collect Results
